@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>length in different ways</h1>
+<script>
+
+ console.log("<--- finding lemgth of string in for-in --->");
+
+let stringIn = prompt("enter any string or name or anything");
+console.log("stringIn = ",stringIn);
+let countIn = 0;
+for(num in stringIn){
+    countIn++
+};
+
+console.log(countIn);
+
+console.log("<--- finding lemgth of string in for-normal --->");
+
+let stringNormal = prompt(" enter any string or name or anything ");
+console.log("stringNormal = ",stringNormal);
+let countNormal = 0;
+for (i = 0;i<=100;i++){
+    if(stringNormal[i]!=undefined){
+    countNormal++
+    }
+};
+    
+console.log(countNormal);
+
+console.log("<--- finding lemgth of string in for-of --->");
+
+let stringOf = prompt("enter any string or name or anything");
+console.log("stringOf = ",stringOf);
+let countOf = 0;
+for (n of stringOf){
+    countOf++
+};
+
+console.log(countOf);
+
+
+</script>
+
+
+</body>
+</html>
